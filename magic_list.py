@@ -16,6 +16,8 @@ class MagicList:
         if index == len(self._list):
             self._append_magic_item()
             self._list[index] = value
+        else:
+            self._list[index] = value
     
     def insert(self, index, value):
         self._list.insert(index, value)
